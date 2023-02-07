@@ -8,5 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a junior undergraduate student of ShanghaiTech University, School of Information Science and Technology (SIST).
+I am a junior undergraduate student of ShanghaiTech University, School of Information Science and Technology (SIST), majoring in Computer Science.
+
+In Spring 2023, I am studying in Massachusetts Institute of Technology (MIT) as an undergraduate special student.
 
