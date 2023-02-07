@@ -10,7 +10,7 @@ redirect_from:
 
 ## ShanghaiTech University, School of Information Science and Technology (SIST)
 
-<img src="../images/shtech-logo.jpg" alt="shtech-logo" style="zoom:50%;" />
+<img src="../images/shtech-logo.jpg" alt="shtech-logo" style="zoom: 33%;" />
 
 - B.Eng. Candidate, Computer Science and Technology
 - Sept. 2020 - July 2024 (Expected)
