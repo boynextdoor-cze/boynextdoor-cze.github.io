@@ -1,13 +1,3 @@
 # main links links
 main:
-  - title: "Educations"
-    url: /educations/
-
-  - title: "Course Projects"
-    url: /projects/
-
-  - title: "Research"
-    url: /research/
-    
-  - title: "CV"
-    url: /cv/
+  
