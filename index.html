@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Harry Chi">
 
-    <title>Harry Chi | Portfolio</title>
+    <title>Harry Chi | About me</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
@@ -127,11 +127,11 @@
                 <div class="col-sm-12 col-lg-8" id="intro-section" style="margin-bottom: 1rem; margin-top:1rem">
                     <h4>Zeen (Harry) Chi</h4>
                     <p class="lead"><b>ShanghaiTech University, B.Eng. Candidate</b></p>
-                    <p class="lead" style="font-size: 14pt">I'm an undergraduate of ShanghaiTech University, School of Information Science and Technology, Class of 2020, majoring
+                    <p class="lead" style="font-size: 14pt">I'm an undergraduate of ShanghaiTech University, School of Information Science and Technology (SIST), majoring
                     in Computer Science.
                     <br>
                     My interests include Computer Vision, Machine Learning, and Artificial Intelligence, especially
-                    compositional reasoning in object detection and medical image segmentation.
+                    scene compositional reasoning and medical image segmentation.
                     </p>
                     
                     <!--<br/>A general design goal of mine is to automate a process with as little user input as possible.</p>-->
@@ -249,7 +249,7 @@
                         <span class="caption">
                             <span class="caption-content">
                                 <h4>Long-tailed Distribution</h4>
-                                <p class="mb-0">The analysis and re-implementation of a landmark paper on the long-tailed distribution problem</p>
+                                <p class="mb-0">Analysis and re-implementation of a landmark paper on the long-tailed distribution problem</p>
                             </span>
                         </span>
                         <img class="img-fluid portfolio-img" src="/img/portfolio/longtail.jpg" alt="">
@@ -471,43 +471,22 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>Neural Model Library</h2>
-                                <p class="lead">Simple creation of feed forward and recurrent neural models in
-                                    Tensorflow.</p>
-                                <p class="lead">This library enables incredibly simple creation of feed forward and
-                                    recurrent neural models in TensorFlow. Simply specify the input shape, output shape,
-                                    and a list of components (or layers) to make up the network. The library then
-                                    figures out the dimensions of each component, initializes each component, and builds
-                                    the model automatically. Most importantly, the model is able to infer the sizes of
-                                    intermediate layers (including recurrent inputs) automatically, requiring you to
-                                    only specify the essentials. This enables you to make quick changes to your entire
-                                    model in just a few lines.</p>
-                                <p class="lead">Several of my friends have commented that, in working on this project,
-                                    I've essentially just re-created Keras in Tensorflow. In retrospect, it is quite
-                                    similar to Keras's Sequential model framework, with the addition of being capable of
-                                    recurrent connections throughout the sequential model. Nonetheless, it was a good
-                                    learning experience.</p>
-                                <p class="lead">More detailed project description coming soon!<br> In the meantime,
-                                    check out some of my other projects.</p>
-                                <!--<img class="img-fluid d-block mx-auto" src="/img/mit_seal_square.jpg" alt="">
-                  <p class="lead">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                                <!--<div class="row mb-5">
-                      <div class="col-lg-12 col-xl-6" style="padding-top: 6px">
-                        <iframe src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=NeuralModel" frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180" allowtransparency="true"></iframe>
-                      </div>
-                      <div class="col-lg-12 col-xl-6" style="margin-top: auto; margin-bottom: auto">
-                        <a href="https://github.com/ewadkins" class="btn btn-xl btn-primary" target="blank">View on GitHub &nbsp;<i class="fa fa-github"></i></a>
-                      </div>
-                  </div>-->
+                                <h2>Ray Tracing NURBS Surfaces</h2>
+                                <p class="lead">A tessellation-free NURBS surfaces ray-tracing renderer.</p>
+                                <img class="img-fluid d-block mx-auto" src="/img/portfolio/CGdetail.png" alt="Custom OpenGL game engine">
+                                <p class="lead">As a non-analytical surface, in order to render a NURBS surface, triangulation requires a huge amount of calculation and
+                                memory to generate and store meshes respectively. Therefore, how to render a NURBS surface directly with high
+                                effficiency and accuracy is a quite challenging topic in Computer Graphics. In this project, I and <a href="http://vixbob.moe/" target="blank">Wenchao Li</a> finished a path tracer with global illumination to directly render untrimmed NURBS surfaces without tessellating (traingulating) the surface.
+                                </p>
+                                <p class="lead">Following the methods proposed by <a href="/doc/basic.pdf" target="blank">Martin et al.</a>, we successfully implemented the renderer with more than 3300 C++ baseline. In details, we applied surface refinement for better rendering quality and efficiency, and constructed a BVH to maintain the surface sub-patches and accelerate the ray-patch intersection process.</p>
+                                <p class="lead">We had planned to take on a more difficult problem - trimmed NURBS surface - but due to time constraints, unfortunately only a
+                                partial implementation was achieved...</p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/NeuralModel"
-                                        target="blank">https://github.com/ewadkins/NeuralModel</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=NeuralModel"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
+                                    <a href="https://github.com/boynextdoor-cze/CG-Final-Project"
+                                        target="blank">https://github.com/boynextdoor-cze/CG-Final-Project</a>
                                 </div>
+                                <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                                     <i class="fa fa-times"></i> Close Project</a>
                             </div>
@@ -530,26 +509,17 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>NN Trainer Library</h2>
-                                <p class="lead">A library for automatic supervised training of neural models.</p>
-                                <!--<img class="img-fluid d-block mx-auto" src="/img/mit_seal_square.jpg" alt="">
-                  <p class="lead">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                                <p class="lead">This library provides methods for training supervised neural network
-                                    models without the need to implement all the necessary steps (eg. input handling,
-                                    reformatting, batching, evaluation, feedback, etc.). It also allows for a large
-                                    amount of customization in the training and evaluation process, while also making
-                                    assumptions where possible, in order to minimize required user input.</p>
-                                <p class="lead">More detailed project description coming soon!<br> In the meantime,
-                                    check out some of my other projects.</p>
+                                <h2>Chinese Chess</h2>
+                                <p class="lead">A multi-functional Chinese chess game with artificial intelligence.</p>
+                                <img class="img-fluid d-block mx-auto" src="/img/portfolio/chess.jpg" alt="Chinese Chess Board">
+                                <p class="lead">In this project, we built a Chinese chess game panel for human players, with Pygame for Python and JUCE for C++, respectively. Based on the skeleton, we implemented three algorithms, Minimax Search, Q-Learning, and Monte-Carlo Tree Search, to act as AI chess agents.</p>
+                                <p class="lead">With the high efficiency of C++, our AI agents can make relatively good decisions in a short time. We also conducted extensive experiments, including 50 games for each pair of agents, to test and compare the power of these agents.</p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/NNTrainer"
-                                        target="blank">https://github.com/ewadkins/NNTrainer</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=NNTrainer"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
+                                    <a href="https://github.com/boynextdoor-cze/CS181-Final-Project"
+                                        target="blank">https://github.com/boynextdoor-cze/CS181-Final-Project</a>
                                 </div>
+                                <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                                     <i class="fa fa-times"></i> Close Project</a>
                             </div>
@@ -572,27 +542,18 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>NN Experiments</h2>
-                                <p class="lead">A collection of various neural network models in TensorFlow.</p>
-                                <img class="img-fluid d-block mx-auto" src="/img/nn_test.png"
-                                    alt="Multiclass classifier">
-                                <p class="lead">This project consists of a collection of neural network models that I
-                                    have trained on various datasets (eg. MNIST for digit classification with a CNN).
-                                    Above, you'll see a simple example of a model that has learned to classify points of
-                                    each of the four labels (i.e. colors) it's been given.</p>
-                                <p class="lead">I started work on this collection of models as a means of learning
-                                    applied machine learning.</p>
-                                <p class="lead">More detailed project description coming soon!<br> In the meantime,
-                                    check out some of my other projects.</p>
+                                <h2>Long-tailed Distribution</h2>
+                                <p class="lead">Analysis and re-implementation of a landmark paper on the long-tailed distribution problem.</p>
+                                <p class="lead">For image classification tasks, even with the help of large-scale deep neural networks, such as CNNs, the model will
+                                overfit the head data (more samples) and thus inhibit the ability to generalize to the tail data (few samples) due to
+                                the long-tail data distribution problem in large-scale datasets.</p>
+                                <p class="lead">We analyzed a very representative paper, <a href="/doc/longtail.pdf" target="blank">Decoupling Representation and Classifier for Long-tailed Recongnition</a>, and re-implemented the two-stage disentangled training method it proposed. Based on the implementation, we tested the effect of such a scheme on <a href="https://www.image-net.org/" target="blank">ImageNet</a> dataset, and concluded that this method does outperforms the traditional one-stage methods.</p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/NeuralNets"
-                                        target="blank">https://github.com/ewadkins/NeuralNets</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=NeuralNets"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
+                                    <a href="https://github.com/boynextdoor-cze/CS182-Project"
+                                        target="blank">https://github.com/boynextdoor-cze/CS182-Project</a>
                                 </div>
+                                <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                                     <i class="fa fa-times"></i> Close Project</a>
                             </div>
