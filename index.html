@@ -296,41 +296,73 @@
     </section>
 
     <!-- Research -->
-    <section class="content-section" id="research">
+    <section class="content-section bg-light" id="research">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Research Experience</h2>
-                </div>
+            <div class="content-section-heading text-center">
+                <h2 class="mb-2">Research Experience</h2>
             </div>
             <br>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="/img/research/plus.png" alt="..." />
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 style="color:darkorange">ShanghaiTech PLUS Lab</h4>
-                                    <h5>Shanghai, China</h5>
-                                    <h5>Sept. 2022 - Jan. 2023</h5>
-                                    <h5>Undergraduate researcher</h5>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">
-                                        Supervisor: <a data-toggle="modal" href="https://faculty.sist.shanghaitech.edu.cn/faculty/hexm/index.html">Prof. Xuming He</a>
-                                        <br>
-                                        Topic: Long-tailed Distribution of Datasets in Human-Object Interaction Detection
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="row no-gutters">
+                <div class="col-lg-4">
+                    <a class="portfolio-item" data-toggle="modal" href="#researchModal1">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h4>ShanghaiTech PLUS Lab</h4>
+                                <p class="mb-0">Long-tailed Distribution of Datasets in Human-Object Interaction Detection</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid portfolio-img" src="/img/research//hoi.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Research Modals -->
+    <div class="portfolio-modal modal fade" id="researchModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="modal-body">
+                                <h2>Long-tailed Distribution of Datasets in Human-Object Interaction Detection</h2>
+                                <h4>Shanghai, China</h4>
+                                <h4>Sept. 2022 - Jan. 2023</h4>
+                                <h5>Supervisor: <a data-toggle="modal" href="https://faculty.sist.shanghaitech.edu.cn/faculty/hexm/index.html">Prof. Xuming He</a></h5>
+                                <img class="img-fluid d-block mx-auto" src="/img/research/plus.png"
+                                    alt="plus">
+                                <p class="lead">As a non-analytical surface, in order to render a NURBS surface,
+                                    triangulation requires a huge amount of calculation and
+                                    memory to generate and store meshes respectively. Therefore, how to render a NURBS
+                                    surface directly with high
+                                    effficiency and accuracy is a quite challenging topic in Computer Graphics. In this
+                                    project, we finished a path tracer with global illumination to directly render untrimmed
+                                    NURBS surfaces without tessellating (traingulating) the surface.
+                                </p>
+                                <p class="lead">Following the methods proposed by <a href="/doc/basic.pdf"
+                                        target="blank">Martin et al.</a>, we successfully implemented the renderer with more
+                                    than 3300 C++ baseline. In details, we applied surface refinement for better rendering
+                                    quality and efficiency, and constructed a BVH to maintain the surface sub-patches and
+                                    accelerate the ray-patch intersection process.</p>
+                                <p class="lead">We had planned to take on a more difficult problem - trimmed NURBS surface -
+                                    but due to time constraints, unfortunately only a
+                                    partial implementation was achieved...</p>
+                                <br>
+                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                                    <i class="fa fa-times"></i> Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Skills -->
     <section class="content-section bg-primary text-white text-center" id="skills">
@@ -424,7 +456,6 @@
     </footer>
 
     <!-- Portfolio Modals -->
-
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
