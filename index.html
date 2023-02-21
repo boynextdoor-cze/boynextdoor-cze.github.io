@@ -472,15 +472,17 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
                                 <h2>Ray Tracing NURBS Surfaces</h2>
+                                <h4>ShanghaiTech University, Computer Graphics I (CS171)</h4>
                                 <p class="lead">A tessellation-free NURBS surfaces ray-tracing renderer.</p>
                                 <img class="img-fluid d-block mx-auto" src="/img/portfolio/CGdetail.png" alt="Custom OpenGL game engine">
                                 <p class="lead">As a non-analytical surface, in order to render a NURBS surface, triangulation requires a huge amount of calculation and
                                 memory to generate and store meshes respectively. Therefore, how to render a NURBS surface directly with high
-                                effficiency and accuracy is a quite challenging topic in Computer Graphics. In this project, I and <a href="http://vixbob.moe/" target="blank">Wenchao Li</a> finished a path tracer with global illumination to directly render untrimmed NURBS surfaces without tessellating (traingulating) the surface.
+                                effficiency and accuracy is a quite challenging topic in Computer Graphics. In this project, we finished a path tracer with global illumination to directly render untrimmed NURBS surfaces without tessellating (traingulating) the surface.
                                 </p>
                                 <p class="lead">Following the methods proposed by <a href="/doc/basic.pdf" target="blank">Martin et al.</a>, we successfully implemented the renderer with more than 3300 C++ baseline. In details, we applied surface refinement for better rendering quality and efficiency, and constructed a BVH to maintain the surface sub-patches and accelerate the ray-patch intersection process.</p>
                                 <p class="lead">We had planned to take on a more difficult problem - trimmed NURBS surface - but due to time constraints, unfortunately only a
                                 partial implementation was achieved...</p>
+                                <p>Collaborator: <a href="http://vixbob.moe/" target="blank">Wenchao Li</a></p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
                                     <a href="https://github.com/boynextdoor-cze/CG-Final-Project"
@@ -510,10 +512,12 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
                                 <h2>Chinese Chess</h2>
+                                <h4>ShanghaiTech University, Artificial Intelligence (CS181)</h4>
                                 <p class="lead">A multi-functional Chinese chess game with artificial intelligence.</p>
                                 <img class="img-fluid d-block mx-auto" src="/img/portfolio/chess.jpg" alt="Chinese Chess Board">
                                 <p class="lead">In this project, we built a Chinese chess game panel for human players, with Pygame for Python and JUCE for C++, respectively. Based on the skeleton, we implemented three algorithms, Minimax Search, Q-Learning, and Monte-Carlo Tree Search, to act as AI chess agents.</p>
                                 <p class="lead">With the high efficiency of C++, our AI agents can make relatively good decisions in a short time. We also conducted extensive experiments, including 50 games for each pair of agents, to test and compare the power of these agents.</p>
+                                <p>Collaborators: <a href="https://github.com/Kidrauh" target="blank">Zhongxiao Cong</a>, <a href="https://github.com/cuttle-fish-my" target="blank">Bingnan Li</a>, <a href="https://github.com/caoster" target="blank">Suting Chen</a> and <a href="https://github.com/nick-yf" target="blank">Yifan Qin</a></p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
                                     <a href="https://github.com/boynextdoor-cze/CS181-Final-Project"
@@ -543,11 +547,13 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
                                 <h2>Long-tailed Distribution</h2>
+                                <h4>ShanghaiTech University, Introduction to Machine Learning (CS182)</h4>
                                 <p class="lead">Analysis and re-implementation of a landmark paper on the long-tailed distribution problem.</p>
                                 <p class="lead">For image classification tasks, even with the help of large-scale deep neural networks, such as CNNs, the model will
                                 overfit the head data (more samples) and thus inhibit the ability to generalize to the tail data (few samples) due to
                                 the long-tail data distribution problem in large-scale datasets.</p>
                                 <p class="lead">We analyzed a very representative paper, <a href="/doc/longtail.pdf" target="blank">Decoupling Representation and Classifier for Long-tailed Recongnition</a>, and re-implemented the two-stage disentangled training method it proposed. Based on the implementation, we tested the effect of such a scheme on <a href="https://www.image-net.org/" target="blank">ImageNet</a> dataset, and concluded that this method does outperforms the traditional one-stage methods.</p>
+                                <p>Collaborator: <a href="https://github.com/Kidrauh" target="blank">Zhongxiao Cong</a></p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
                                     <a href="https://github.com/boynextdoor-cze/CS182-Project"
@@ -576,26 +582,41 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>Collage Generator</h2>
-                                <p class="lead">Intelligently draws a message with images.</p>
-                                <img class="img-fluid d-block mx-auto" src="/img/collage_big.jpg"
-                                    alt="Intelligently draws messages with images">
-                                <p class="lead">Collage Generator uses machine learning techniques, such as K-Means
-                                    Clustering, to determine which images should be used to draw the message and which
-                                    to use as the background.</p>
-                                <p class="lead">Given a single set of images (.zip file) and a message to display, my
-                                    Collage Generator returns a high resolution collage with the message drawn out using
-                                    the images. It works by determining a subset of images that are the most distinct
-                                    and drawing the message with those and the background with the others.</p>
+                                <h2>Who is Flying Over?</h2>
+                                <h4>ShanghaiTech University, Introduction to Information Science and Technology (SI100B)</h4>
+                                <p class="lead">Flight data analysis system.</p>
+                                <img class="img-fluid d-block mx-auto" src="/img/portfolio/flight.png"
+                                    alt="SI100B">
+                                <img class="img-fluid d-block mx-auto" src="/img/portfolio/structure.png" alt="SI100B">
+                                <p class="lead">Introduction:
+                                We implemented a crawler to get flight data
+                                from <a href="https://zh.flightaware.com/" target="blank">https://zh.flightaware.com/</a>, as well as an LED controller(to display the number of flights), a control panel(on
+                                website) and data visualization.
+                                The crawler can automatically crawl the data per certain seconds, and LED will be lightened at the same time(based on
+                                the quantity of flights). We can modify parameters of crawler and LED via control panel to get data in customized areas,
+                                and some parts of the data will be displayed on the website.
+                                </p>
+                                <p class="lead">There are many great features for our project:
+                                    <ol>
+                                    <li>Frontend is written in Vue.js, the UI is prettified by Vuetify.</li>
+                                    <li>We used Redis as a message queue to communicate among modules, avoiding shared mutable states.</li>
+                                    <li>We used JSON format for data storage, which is cross-language and cross-platform.</li>
+                                    <li>Frontend and backend applications communicate via RESTful API. Data are stored in .json files. Images are stored in
+                                    Data URI.</li>
+                                    <li>Coordinates can be modified via the map on the website, which is more efficient(thanks to mapbox).</li>
+                                    </ol>
+                                </p>
+                                <p>Collaborators: <a href="https://github.com/glyh" target="blank">Yihang Liu</a> and <a
+                                        href="https://github.com/hehelego" target="blank">Cheng Peng</a></p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/CollageGenerator"
-                                        target="blank">https://github.com/ewadkins/CollageGenerator</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=CollageGenerator"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
+                                    <a href="https://github.com/boynextdoor-cze/SI100B-Project"
+                                        target="blank">https://github.com/boynextdoor-cze/SI100B-Project</a>
+                                    <br>
+                                    <b>and here is the demo: </b>
+                                    <a href="https://www.bilibili.com/video/BV1p5411n77P/" target="blank">https://www.bilibili.com/video/BV1p5411n77P/</a>
                                 </div>
+                                <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                                     <i class="fa fa-times"></i> Close Project</a>
                             </div>
@@ -618,31 +639,29 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>OpenGL Game Engine</h2>
-                                <p class="lead">A custom game engine including dynamic lighting, terrain, and static and
-                                    dynamic objects.</p>
-                                <img class="img-fluid d-block mx-auto" src="/img/gameengine_big.png"
-                                    alt="Custom OpenGL game engine">
-                                <p class="lead">A custom game engine created from scratch in C++ using OpenGL.</p>
-                                <p class="lead">This includes GLSL shader support for dynamic lighting (ambient,
-                                    diffuse, and specular) and multiple light sources, algorithms to generate multiple
-                                    different types of terrain (the images above show fractal-generated mountains and
-                                    hills, respectively), and an intuitive object rendering system that handles both
-                                    static and dynamic objects.</p>
-                                <p class="lead">A previous version of this game engine created in Java using <a
-                                        href="https://www.lwjgl.org/" target="blank">LWJGL</a> and the <a
-                                        href="http://jbullet.advel.cz/" target="blank">JBullet Physics Library</a> also
-                                    includes a customizable object UI and real-time physics that can be used to simulate
-                                    complicated collisions.</p>
+                                <h2>Multi-armed Bandit Analysis</h2>
+                                <h4>ShanghaiTech University, Probability and Statistics (SI140)</h4>
+                                <p class="lead">A shallow-to-deep analysis of the multi-armed bandit problem.</p>
+                                <p class="lead">This project is about a classical problem in reinforcement learning, named Multi-armed Bandit.
+                                The project is generally divided into three parts:
+                                <ul>
+                                    <li>Simulation. We have to simulate the multi-armed bandit via different algorithms under a set of given parameters and show
+                                    the output, i.e., the performance of the bandit.</li>
+                                    <li>Analysis. We have to analyze the impact of each hyperparameter of each algorithm. Additionally, we have to analyze an
+                                    important problem in the multi-armed bandit problem, that is, the exploration-exploitation trade-off problem.</li>
+                                    <li>Design. We have to handle some variants of the classical scenario, including dependency and constraint, and design some
+                                    algorithms by ourselves to address the novel problem variants.</li>
+                                </ul>
+                                </p>
+                                <p class="lead">You can refer to the <a href="https://github.com/boynextdoor-cze/Probability-Course-Project/blob/main/project%20outline.pdf" target="blank">outline</a> to learn about the background and requirements of this project and refer to the <a href="https://github.com/boynextdoor-cze/Probability-Course-Project/blob/main/Project%20Report.pdf"
+                                target="blank">report</a> to
+                                look through my project report.</p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/OpenGLGameEngine"
-                                        target="blank">https://github.com/ewadkins/OpenGLGameEngine</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=OpenGLGameEngine"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
+                                    <a href="https://github.com/boynextdoor-cze/Probability-Course-Project"
+                                        target="blank">https://github.com/boynextdoor-cze/Probability-Course-Project</a>
                                 </div>
+                                <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                                     <i class="fa fa-times"></i> Close Project</a>
                             </div>
@@ -665,489 +684,45 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>Ray Casting Simulation</h2>
-                                <p class="lead">A simulation using AI techniques such as ray casting, spatial mapping,
-                                    Bayesian filtering, pathfinding, etc.</p>
-                                <img class="img-fluid d-block mx-auto" src="/img/raycast_big.png"
-                                    alt="AI simulation using Ray Casting">
-                                <p class="lead">An AI which simulates a robot that uses AI techniques to perform tasks
-                                    such as estimating its location on a map and navigating towards a goal through an
-                                    unknown maze in real time.</p>
-                                <p class="lead">Given an image, the simulation creates a map and uses AI techniques such
-                                    as ray casting, spatial mapping, Bayesian filtering, and pathfinding to perform
-                                    tasks such as navigating from a start to a goal given <strong>no knowledge</strong>
-                                    of the layout the map (as shown in the image above), or determine its location
-                                    within the map based on the features of the map it has encountered so far.</p>
-                                <video id="raycastVideo" width="450" height="450" controls autoplay>
-                                    <source src="/vid/raycast_video.mp4" type="video/mp4">
+                                <h2>Chrome Dino Minigame</h2>
+                                <h4>ShanghaiTech University, Computer Architecture I (CS110)</h4>
+                                <p class="lead">Chrome Dino pixel game on Longan Nano development board.</p>
+                                <img class="img-fluid d-block mx-auto" src="/img/portfolio/dino.jpg"
+                                    alt="dino">
+                                <p class="lead">In this project, we implemented a Chrome Dino Runner Game using the Longan Nano development board. We utilized PlarformIO to interact with the development board and support cross-language programming. For example, we
+                                implemented most of the framework by C, but some of the auxiliary functions are implemented by RISC-V instruction set.
+                                The functions can be invoked bidirectionally.</p>
+                                <p class="lead">The game we implemented includes:
+                                    <ul>
+                                        <li>A simple start menu.</li>
+                                        <li>A helping panel demonstrating how to control the T-Rex.</li>
+                                        <li>A mode-selection panel to choose easy mode or hard mode.</li>
+                                        <li>A live score board. The score increases as the T-Rex running.</li>
+                                        <li>Two buttons to control the T-Rex to perform two different actions (jump and lower its head) to cross obstacles.</li>
+                                        <li>Dynamically moved obstacles, including cactus on the ground and pterosaur flying in the sky.</li>
+                                        <li>A invincible mode when the score reaches integer multiples of 100. The T-Rex will not be killed by obstacles under this
+                                        mode. After the score increases by 50, the mode will temporarily disappear.</li>
+                                    </ul>
+                                </p>
+                                <p class="lead">Here is the demo video:</p>
+                                <video id="demo" width="450" height="450" controls autoplay>
+                                    <source src="/vid/dino.m4v" type="video/m4v">
                                     Your browser does not support the video tag.
                                 </video>
                                 <script>
-                                    document.getElementById('raycastVideo').addEventListener('ended', function (e) {
+                                    document.getElementById('demo').addEventListener('ended', function (e) {
                                         setTimeout(function () {
-                                            document.getElementById('raycastVideo').play();
+                                            document.getElementById('demo').play();
                                         }, 2000);
                                     }, false);
                                 </script>
-                                <p class="lead">The above video shows the AI navigate through the maze from start to
-                                    goal without any prior knowledge of the map. This is done solely by collecting data
-                                    from its sensors (the rays are shown in red) which report distances to obstacles,
-                                    and then using techniques such as spatial mapping and pathfinding (modified <a
-                                        href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="blank">A*
-                                        algorithm</a>).</p>
+                                <p>Collaborator: <a href="https://github.com/Kidrauh" target="blank">Zhongxiao Cong</a></p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/RayCastingSimulation"
-                                        target="blank">https://github.com/ewadkins/RayCastingSimulation</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=RayCastingSimulation"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
+                                    <a href="https://github.com/boynextdoor-cze/Computer-Architecture-Project/tree/master/Project4"
+                                        target="blank">https://github.com/boynextdoor-cze/Computer-Architecture-Project/tree/master/Project4</a>
                                 </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Seam Carver</h2>
-                                <p class="lead">An application for content-aware image resizing.</p>
-                                <img class="img-fluid d-block mx-auto" src="/img/seamcarver_big.png"
-                                    alt="Content-aware image resizing">
-                                <p class="lead">Using a technique called <a
-                                        href="http://graphics.cs.cmu.edu/courses/15-463/2007_fall/hw/proj2/imret.pdf"
-                                        target="blank">seam-carving</a>, this application allows you to take an image
-                                    and resize it <i>without noticeably effecting the content</i>.</p>
-                                <p class="lead">Stretching, shrinking or cropping makes it obvious that an image has
-                                    been modified, but seam-carving works by removing or adding pixels in the least
-                                    noticeable locations in order to reduce or enlarge the size of the image. This
-                                    application provides a UI for my implementation of the seam-carving algorithm. Above
-                                    is an example of reducing the size of an image using content-aware resizing (the
-                                    removed pixels are in red).</p>
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/SeamCarver"
-                                        target="blank">https://github.com/ewadkins/SeamCarver</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=SeamCarver"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Object Tracker</h2>
-                                <p class="lead">An object recognition and tracking tool.</p>
-                                <img class="img-fluid d-block mx-auto" src="/img/objecttracker-big.png"
-                                    alt="Color-Based Object Detection and Tracking">
-                                <p class="lead">An object recognition tool using OpenCV which uses color-based detection
-                                    techniques, such as thresholding and the Hough Circle Transform to detect, learn,
-                                    and then track different objects.</p>
-                                <p class="lead">Using video from your webcam, Object Tracker will detect circular
-                                    objects which you can then choose to track. After choosing an object, it will then
-                                    determine the optimal HSV range for thresholding and then track the object based on
-                                    that range.</p>
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/ObjectTracker"
-                                        target="blank">https://github.com/ewadkins/ObjectTracker</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=ObjectTracker"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Audio Analyzer</h2>
-                                <p class="lead">An audio analyzer and controller for an Arduino-driven LED strip.</p>
-                                <img class="img-fluid d-block mx-auto" src="/img/audioanalyzer_big.png"
-                                    alt="Audio analyzer">
-                                <p class="lead">This application takes audio input from the microphone or speaker
-                                    output, processes it, and then calculates certain audio metrics such as intensity
-                                    gain, bass gain, average intensity, peak frequency, and estimated pitch. Coupled
-                                    with the audio analyzer is an Arduino LED-controller, which I send serialized data
-                                    about the changes in audio metrics in order to control a WS2812B LED-strip.</p>
-                                <p class="lead">The audio analyzer is able to extract useful information from audio in
-                                    real-time. When processing the data, it takes into account the non-linearities of
-                                    the human ear and modifies the data accordingly, in order to extract the most
-                                    noticeable audio features. Then, it determines what information is required by the
-                                    LED-controller and uses bit-packing to serialize and send the data as quickly as
-                                    possible to give the smallest possible response time. Currently, the estimated pitch
-                                    is mapped to a point on the color spectrum and used to control the hue of the
-                                    lights, and the bass gain is used to control the brightness of the lights.</p>
-                                <p class="lead">Below is an example of the Audio Analyzer listening to the song <a
-                                        href="https://www.youtube.com/watch?v=k1gsZ-OsGpI" target="blank">Hymn For The
-                                        Weekend (Seeb remix) - Coldplay</a>.</p>
-                                <video controls="controls" width="915" height="330" name="Audio Analyzer"
-                                    src="/vid/audioanalyzer.mp4"></video>
-                                <p class="lead">Audio Analyzer listening to <a
-                                        href="https://www.youtube.com/watch?v=k1gsZ-OsGpI" target="blank">Hymn For The
-                                        Weekend (Seeb remix) - Coldplay</a></p>
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/AudioAnalyzer"
-                                        target="blank">https://github.com/ewadkins/AudioAnalyzer</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=AudioAnalyzer"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Request</h2>
-                                <p class="lead">A library used for sending HTTP/HTTPS requests with simple data
-                                    management functions.</p>
-                                <p class="lead">A simple library used for sending HTTP and HTTPS requests, with many
-                                    data management functions designed to make sending requests and parsing the response
-                                    as easy as possible.</p>
-                                <p class="lead">Clients can easily add or modify query parameters, form data,
-                                    URL-encoded form data, raw data, JSON data, and binary data via a Request object,
-                                    and then easily read the response from a Response object, which includes automatic
-                                    parsing into JSON and HTML data structures.</p>
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/Request"
-                                        target="blank">https://github.com/ewadkins/Request</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=Request"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Compiler/Transpiler</h2>
-                                <p class="lead">Parses and compiles a custom programming language into C++.</p>
-                                <p class="lead">I've created my own C-based scripting language. While it strongly
-                                    resembles other languages, it has features that others alone do not have. It
-                                    includes Java's static type checking, C++'s primitive types, Python's binary
-                                    operations and nested functions, and JavaScript's expression evaluation and objects.
-                                </p>
-                                <p class="lead">It is designed to overcome some of the more annoying aspects of C++,
-                                    such as its inability to be used as a scripting language and resolve functions
-                                    defined later in the file or nested within other functions. Simultaneously, it
-                                    retains many of the great features of C++ as well as features from other languages
-                                    like Python and JavaScript, all while keeping the speed C++ is known for. This is
-                                    possible because the compiler uses <a href="http://www.antlr.org/"
-                                        target="blank">ANTLR</a> and a <a
-                                        href="https://github.com/ewadkins/Compiler/blob/master/src/com/ericwadkins/parser/Compiler.g4"
-                                        target="blank">context-free grammar</a> to parse the code and then transpile it
-                                    directly into C++.</p>
-                                <p class="lead">I'm still working on this project and looking to add more features.
-                                    Below is a brief example of a the language implementation which demonstrates some of
-                                    the features of the language so far, followed by the abstract syntax tree generated
-                                    by the parser.</p>
-                                <pre style="text-align:left"><code>
-print(test(0));                           // Use as scripting language
-
-unsigned short test(int n) {              // unsigned short return type
-    long double x = 2;
-    if (n) {                              // if n != 0
-        return (unsigned short) x ** n;   // x to the power of n
-    }
-    return tryAgain();
-
-    unsigned short tryAgain() {           // Nested function
-        return test(n + 1);
-    }
-}
-                  </code></pre>
-                                <img class="img-responsive img-centered" src="/img/compiler_big3.png"
-                                    alt="Parser and compiler for CBScript">
-                                <p class="lead">Below are two more examples: <a
-                                        href="https://en.wikipedia.org/wiki/Binary_search_algorithm"
-                                        target="blank">Binary search</a> and the <a
-                                        href="https://en.wikipedia.org/wiki/Ackermann_function" target="blank">Ackermann
-                                        function</a>.</p>
-                                <pre style="text-align:left"><code>
-// Binary Search
-int binarySearch(int[] arr, int value, int left, int right) {
-    while (left <= right) {
-        int middle = (left + right) / 2;
-        if (arr[middle] == value)
-            return middle;
-        else if (arr[middle] > value)
-            right = middle - 1;
-        else
-            left = middle + 1;
-    }
-    return -1;
-}
-                  </code></pre>
-                                <img class="img-responsive img-centered" src="/img/compiler_big1.png"
-                                    alt="Parser and compiler for CBScript">
-                                <pre style="text-align:left"><code>
-// Ackermann Function
-int ackermann(int m, int n) {
-    if (m == 0) return n + 1;
-    if (n == 0) return ackermann(m - 1, 1);
-
-    return ackermann(m - 1, ackermann(m, n - 1));
-}
-                  </code></pre>
-                                <img class="img-responsive img-centered" src="/img/compiler_big2.png"
-                                    alt="Parser and compiler for CBScript">
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/Compiler"
-                                        target="blank">https://github.com/ewadkins/Compiler</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=Compiler"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Monte Carlo Localization Library</h2>
-                                <p class="lead">A library for n-dimensional Monte Carlo localization.</p>
-                                <img class="img-fluid d-block mx-auto" width="500px" src="/img/stages.jpg" alt="">
-                                <p class="lead">Monte Carlo Localization (MCL) is useful in scenarios where uncertainty
-                                    arises in a system over time (as a result of error; eg. physical instruments in the
-                                    error-prone, real world) and when observations can be made to reduce said
-                                    uncertainty. I've created a library for MCL in any number of dimensions, so that any
-                                    number of error-prone factors can be accounted for.</p>
-                                <p class="lead">The image above shows an example of the library in use in a simulated
-                                    environment. Shown is a simulated instrument, initialized with no belief as to its
-                                    initial position or orientation. Over time, and through observation, the instrument
-                                    develops a correct belief as to its position and orientation using this MCL library.
-                                </p>
-                                <p class="lead">This library is the result, in part, of a project funded by The MITRE
-                                    Corporation and MIT's Department of Electrical Engineering and Computer Science
-                                    through a MIT-MITRE Undergraduate Research and Innovation scholarship, and was
-                                    developed primarily for use in <a href="/doc/Smart_Microscopy.pdf"
-                                        target="blank">Self-Driving Microscopy: Bayesian Inference for Localization and
-                                        Autonomous Navigation</a>.</p>
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/MCL"
-                                        target="blank">https://github.com/ewadkins/MCL</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=MCL"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Swiper</h2>
-                                <p class="lead">Allows a smartwatch to control presentations and other remote software.
-                                </p>
-                                <img class="img-fluid d-block mx-auto" src="/img/swiper.png" alt="">
-                                <p class="lead">More detailed project description coming soon!<br> In the meantime,
-                                    check out some of my other projects.</p>
-                                <!--<div class="lead mb-4">
-                    <b>View this project on GitHub: </b>
-                    <a href="https://github.com/ewadkins/NeuralModel" target="blank">https://github.com/ewadkins/NeuralModel</a>
-                    <iframe class="mt-2" src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=NeuralModel" frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180" allowtransparency="true"></iframe><br>
-                  </div>-->
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Financial Graph</h2>
-                                <p class="lead">Graphs and analyzes your personal financial history.</p>
-                                <!--<img class="img-fluid d-block mx-auto" src="/img/financial_graph.png" alt="">-->
-                                <p class="lead">More detailed project description coming soon!<br> In the meantime,
-                                    check out some of my other projects.</p>
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/FinancialGraph"
-                                        target="blank">https://github.com/ewadkins/FinancialGraph</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=FinancialGraph"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Web Scraper</h2>
-                                <p class="lead">Various purpose scripts for easy web scraping.</p>
-                                <p class="lead">Scripts used to efficiently scrape the web using various filters and
-                                    heuristics to speed up the process. One example is my Wikipedia shortest path
-                                    finder, which, given a starting page and goal page, will find the shortest path
-                                    between the two using only links on Wikipedia.</p>
-                                <p class="lead">More detailed project description coming soon!<br> In the meantime,
-                                    check out some of my other projects.</p>
-                                <div class="lead mb-4">
-                                    <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/ewadkins/WebScraper"
-                                        target="blank">https://github.com/ewadkins/WebScraper</a>
-                                    <iframe class="mt-2"
-                                        src="http://lab.lepture.com/github-cards/card.html?user=ewadkins&repo=WebScraper"
-                                        frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180"
-                                        allowtransparency="true"></iframe><br>
-                                </div>
+                                <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                                     <i class="fa fa-times"></i> Close Project</a>
                             </div>
