@@ -115,10 +115,10 @@
                                     <a href="https://www.facebook.com/zeen.chi" target="blank"><i
                                             class="fa fa-facebook"></i></a>
                                 </li>
-                                <!-- <li class="text-center">
+                                <li class="text-center">
                                     <a href="https://www.linkedin.com/in/zeen-chi-230333238/" target="blank"><i
                                             class="fa fa-linkedin"></i></a>
-                                </li> -->
+                                </li>
                                 <li class="text-center">
                                     <a href="https://github.com/boynextdoor-cze" target="blank"><i
                                             class="fa fa-github"></i></a>
@@ -136,18 +136,16 @@
                     My interests include Computer Vision, Machine Learning, and Artificial Intelligence, especially
                     scene compositional reasoning and medical image segmentation.
                     </p>
-                    
-                    <!--<br/>A general design goal of mine is to automate a process with as little user input as possible.</p>-->
                     <div id="social2" class="mt-4">
                         <ul class="list-inline social-buttons text-center">
                             <li>
                                 <a href="https://www.facebook.com/zeen.chi" target="blank"><i
                                         class="fa fa-facebook"></i></a>
                             </li>
-                            <!-- <li>
+                            <li>
                                 <a href="https://www.linkedin.com/in/zeen-chi-230333238" target="blank"><i
                                         class="fa fa-linkedin"></i></a>
-                            </li> -->
+                            </li>
                             <li>
                                 <a href="https://github.com/boynextdoor-cze" target="blank"><i class="fa fa-github"></i></a>
                             </li>
@@ -168,12 +166,13 @@
             </div>
             <div class="container text-center mb-5">
                 <p class="lead">A short summary of my academic experience.</p>
+                <p class="lead">(You can click the icon to view my selected coursework)</p>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="/img/edu/shtech.jpg" alt="..." />
+                            <div class="timeline-image" data-toggle="modal" href="#educationModal1"><img class="rounded-circle img-fluid" src="/img/edu/shtech.jpg" alt="..." />
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -215,6 +214,101 @@
         </div>
     </section>
 
+    <!-- Research Modals -->
+    <div class="portfolio-modal modal fade" id="educationModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="modal-body">
+                                <h2>Selected Coursework</h2>
+                                <table border="1" align="center">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Computer Graphics I</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artificial Intelligence</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Introduction to Machine Learning</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artificial Intelligence</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Computer Architecture I & Project</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Introduction to Information Science and Technology</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mathematical Analysis I</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Probability and Statistics I</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discrete Mathematics</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Signals and Systems & Lab</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Introduction to Stochastic Simulation Methods</td>
+                                        <td>A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Introduction to Programming</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Algorithms and Data Structures</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mathematical Analysis II</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Digital Circuits</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Linear Algebra I</td>
+                                        <td>A-</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                                    <i class="fa fa-times"></i> Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Portfolio -->
     <section class="content-section bg-light" id="projects">
         <div class="container">
@@ -224,7 +318,7 @@
             <div class="container text-center mb-5">
                 <p class="lead">Here are course projects finished independently or collaboratively.</p>
             </div>
-            <div class="row no-gutters">
+            <div class="row no-gutters" style="justify-content: center">
                 <div class="col-lg-4">
                     <a class="portfolio-item" data-toggle="modal" href="#portfolioModal1">
                         <span class="caption">
@@ -296,13 +390,13 @@
     </section>
 
     <!-- Research -->
-    <section class="content-section bg-light" id="research">
-        <div class="container">
+    <section class="content-section" id="research">
+        <div class="container" align="center">
             <div class="content-section-heading text-center">
                 <h2 class="mb-2">Research Experience</h2>
             </div>
             <br>
-            <div class="row no-gutters">
+            <div class="row no-gutters" style="justify-content: center">
                 <div class="col-lg-4">
                     <a class="portfolio-item" data-toggle="modal" href="#researchModal1">
                         <span class="caption">
@@ -334,7 +428,7 @@
                                 <h2>Long-tailed Distribution of Datasets in Human-Object Interaction Detection</h2>
                                 <h4>Shanghai, China</h4>
                                 <h4>Sept. 2022 - Jan. 2023</h4>
-                                <h5>Supervisor: <a data-toggle="modal" href="https://faculty.sist.shanghaitech.edu.cn/faculty/hexm/index.html">Prof. Xuming He</a></h5>
+                                <h5>Undergraduate researcher, supervised by <a data-toggle="modal" href="https://faculty.sist.shanghaitech.edu.cn/faculty/hexm/index.html">Prof. Xuming He</a></h5>
                                 <img class="img-fluid d-block mx-auto" src="/img/research/plus.png"
                                     alt="plus">
                                 <p class="lead">As a non-analytical surface, in order to render a NURBS surface,
@@ -372,7 +466,7 @@
                 <h2 class="mb-2">Skills</h2>
             </div>
             <br>
-            <div class="row" style="margin-bottom: 48px">
+            <div class="row" style="margin-bottom: 48px; justify-content: center">
                 <div class="col-lg-4 col-md-6 mb-5">
                     <span class="service-icon rounded-circle mx-auto mb-3 text-secondary">
                         <i class="fa icon-python fa-2x" style="padding-top:24px; padding-left:12px"></i>
@@ -472,9 +566,8 @@
                                 <h4>ShanghaiTech University, Computer Graphics I (CS171)</h4>
                                 <p class="lead">A tessellation-free NURBS surfaces ray-tracing renderer.</p>
                                 <img class="img-fluid d-block mx-auto" src="/img/portfolio/CGdetail.png" alt="Custom OpenGL game engine">
-                                <p class="lead">As a non-analytical surface, in order to render a NURBS surface, triangulation requires a huge amount of calculation and
-                                memory to generate and store meshes respectively. Therefore, how to render a NURBS surface directly with high
-                                effficiency and accuracy is a quite challenging topic in Computer Graphics. In this project, we finished a path tracer with global illumination to directly render untrimmed NURBS surfaces without tessellating (traingulating) the surface.
+                                <p class="lead">As a non-analytical surface, high-quality-and-efficiency NURBS surface rendering is a very challenging topic in Computer Graphics. Traditional triangulation (tessellation) method requires a huge amount of calculation and
+                                memory to generate and store meshes respectively. To solve this problem, in this project, we implemented a path tracer with global illumination to directly render untrimmed NURBS surfaces without tessellating the surface.
                                 </p>
                                 <p class="lead">Following the methods proposed by <a href="/doc/basic.pdf" target="blank">Martin et al.</a>, we successfully implemented the renderer with more than 3300 C++ baseline. In details, we applied surface refinement for better rendering quality and efficiency, and constructed a BVH to maintain the surface sub-patches and accelerate the ray-patch intersection process.</p>
                                 <p class="lead">We had planned to take on a more difficult problem - trimmed NURBS surface - but due to time constraints, unfortunately only a
