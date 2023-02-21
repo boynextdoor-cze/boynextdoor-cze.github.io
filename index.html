@@ -345,22 +345,22 @@
                     <a class="portfolio-item" data-toggle="modal" href="#portfolioModal3">
                         <span class="caption">
                             <span class="caption-content">
-                                <h4>Long-tailed Distribution</h4>
-                                <p class="mb-0">Analysis and re-implementation of a landmark paper on the long-tailed distribution problem</p>
+                                <h4>Who is Flying over?</h4>
+                                <p class="mb-0">Flight data analysis system</p>
                             </span>
                         </span>
-                        <img class="img-fluid portfolio-img" src="/img/portfolio/longtail.jpg" alt="">
+                        <img class="img-fluid portfolio-img" src="/img/portfolio/flight.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4">
                     <a class="portfolio-item" data-toggle="modal" href="#portfolioModal4">
                         <span class="caption">
                             <span class="caption-content">
-                                <h4>Who is Flying Over?</h4>
-                                <p class="mb-0">Flight data analysis system</p>
+                                <h4>Chrome Dino Minigame</h4>
+                                <p class="mb-0">Chrome Dino pixel game on Longan Nano development board</p>
                             </span>
                         </span>
-                        <img class="img-fluid portfolio-img" src="/img/portfolio/flight.png" alt="">
+                        <img class="img-fluid portfolio-img" src="/img/portfolio/dino.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4">
@@ -378,11 +378,12 @@
                     <a class="portfolio-item" data-toggle="modal" href="#portfolioModal6">
                         <span class="caption">
                             <span class="caption-content">
-                                <h4>Chrome Dino Minigame</h4>
-                                <p class="mb-0">Chrome Dino pixel game on Longan Nano development board</p>
+                                <h4>Long-tailed Distribution</h4>
+                                <p class="mb-0">Analysis and re-implementation of a landmark paper on the long-tailed distribution
+                                    problem</p>
                             </span>
                         </span>
-                        <img class="img-fluid portfolio-img" src="/img/portfolio/dino.jpg" alt="">
+                        <img class="img-fluid portfolio-img" src="/img/portfolio/longtail.jpg" alt="">
                     </a>
                 </div>
             </div>
@@ -429,24 +430,22 @@
                                 <h4>Shanghai, China</h4>
                                 <h4>Sept. 2022 - Jan. 2023</h4>
                                 <h5>Undergraduate researcher, supervised by <a data-toggle="modal" href="https://faculty.sist.shanghaitech.edu.cn/faculty/hexm/index.html">Prof. Xuming He</a></h5>
+                                <br>
                                 <img class="img-fluid d-block mx-auto" src="/img/research/plus.png"
                                     alt="plus">
-                                <p class="lead">As a non-analytical surface, in order to render a NURBS surface,
-                                    triangulation requires a huge amount of calculation and
-                                    memory to generate and store meshes respectively. Therefore, how to render a NURBS
-                                    surface directly with high
-                                    effficiency and accuracy is a quite challenging topic in Computer Graphics. In this
-                                    project, we finished a path tracer with global illumination to directly render untrimmed
-                                    NURBS surfaces without tessellating (traingulating) the surface.
+                                <p class="lead">
+                                    As a high-level compositional reasoning in object detection, the goal of Human-Object Interaction (HOI) detection is to make machine understand human activities in static images, and the activities are abstracted as a set of &lt;human, object, action&gt; HOI triplets.
                                 </p>
-                                <p class="lead">Following the methods proposed by <a href="/doc/basic.pdf"
-                                        target="blank">Martin et al.</a>, we successfully implemented the renderer with more
-                                    than 3300 C++ baseline. In details, we applied surface refinement for better rendering
-                                    quality and efficiency, and constructed a BVH to maintain the surface sub-patches and
-                                    accelerate the ray-patch intersection process.</p>
-                                <p class="lead">We had planned to take on a more difficult problem - trimmed NURBS surface -
-                                    but due to time constraints, unfortunately only a
-                                    partial implementation was achieved...</p>
+                                <p class="lead">
+                                    During the research, I firstly learned about the Transformer-based object detection method and its application in HOI detection task. Then, based on a state-of-the-art HOI detection model <a href="/doc/HOI.pdf" target="blank">CDN</a>, together with HOI datasets like V-COCO and HICO-DET, I investigated instances of long-tailed distribution, especially the double long-tail of objects and actions in the datasets, and their impacts on detection results. As a result, the ability of generalization of the model is highly depressed in tail-categories detection.
+                                </p>
+                                <p class="lead">
+                                    To alleviate the problem, I applied many existing methods to the model, including the decoupled training scheme, re-sampling, re-weighting, etc., and slightly improved the performance on object detection and action classification separately. However, these methods are not powerful enough to improve the accuracy to a large extent. Therefore, I proposed a novel method, which imports the pose of human as a cue and analyze the pose by either Graph Neural Network (GNN) or linearly mapping the extracted skeleton to feature space. Presumably the pose can provide some prior knowledge of the action and the object that human is interacting with.
+                                </p>
+                                <p class="lead">
+                                    Unfortunately, as I was going to MIT to participate in the exchange program, I could not finish the implementation and verification of
+                                    this idea in time...
+                                </p>
                                 <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                                     <i class="fa fa-times"></i> Close</a>
@@ -530,8 +529,8 @@
                     <h2 class="section-heading">Contact Me</h2>
                     <h5 class="contact-info">Email: <a class="lead" href="mailto:chize@shanghaitech.edu.cn">chize@shanghaitech.edu.cn</a>
                         || <a class="lead" href="mailto:zeenchi@mit.edu">zeenchi@mit.edu</a></h5>
-                    <h5 class="contact-info">Phone: +1 (617)-803-9105 || +86 180-5320-6011</h5>
-                    <h5 class="contact-info">Current address: Cambridge, MA</h5>
+                    <h5 class="contact-info">Phone: <a class="lead">+1 (617)-803-9105</a> || <a class="lead">+86 180-5320-6011</a></h5>
+                    <h5 class="contact-info">Current address: <a class="lead">Cambridge, MA</a></h5>
                 </div>
             </div>
         </div>
@@ -624,7 +623,7 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -660,7 +659,7 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -672,14 +671,13 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>Who is Flying Over?</h2>
+                                <h2>Who is Flying over?</h2>
                                 <h4>ShanghaiTech University, Introduction to Information Science and Technology (SI100B)</h4>
                                 <p class="lead">Flight data analysis system.</p>
                                 <img class="img-fluid d-block mx-auto" src="/img/portfolio/flight.png"
                                     alt="SI100B">
                                 <img class="img-fluid d-block mx-auto" src="/img/portfolio/structure.png" alt="SI100B">
-                                <p class="lead">Introduction:
-                                We implemented a crawler to get flight data
+                                <p class="lead">We implemented a crawler to get flight data
                                 from <a href="https://zh.flightaware.com/" target="blank">https://zh.flightaware.com/</a>, as well as an LED controller(to display the number of flights), a control panel(on
                                 website) and data visualization.
                                 The crawler can automatically crawl the data per certain seconds, and LED will be lightened at the same time(based on
@@ -696,6 +694,8 @@
                                     <li>Coordinates can be modified via the map on the website, which is more efficient(thanks to mapbox).</li>
                                     </ol>
                                 </p>
+                                <p class="lead">Congratulations! Our project was selected as an excellent course project (it is top 1 actually) and presented in the Hall of SIST. This is
+                                our <a href="/doc/Poster.pdf" target="blank">poster</a>.</p>
                                 <p>Collaborators: <a href="https://github.com/glyh" target="blank">Yihang Liu</a> and <a
                                         href="https://github.com/hehelego" target="blank">Cheng Peng</a></p>
                                 <div class="lead mb-4">
@@ -762,7 +762,7 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
