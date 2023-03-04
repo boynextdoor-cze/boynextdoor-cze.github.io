@@ -48,8 +48,8 @@
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item">
@@ -88,7 +88,7 @@
                         <img class="center-block" src="/img/client/mit.png" alt="Massachusetts Institute of Technology (MIT)">
                     </a>
                     <a href="https://www.csail.mit.edu/" target="blank" class="client-link">
-                        <img class="center-block" src="/img/client/csail.png" alt="MIT CSAIL">
+                        <img class="center-block" src="/img/client/csail.svg" alt="MIT CSAIL">
                     </a>
                 </div>
             </div>
@@ -311,11 +311,149 @@
         </div>
     </div>
 
+    <!-- Research -->
+    <section class="content-section" id="research">
+        <div class="container" align="center">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-2">Research Experience</h2>
+            </div>
+            <br>
+            <div class="row no-gutters" style="justify-content: center">
+                <div class="col-lg-4">
+                    <a class="portfolio-item" data-toggle="modal" href="#researchModal1">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h4>ShanghaiTech PLUS Lab</h4>
+                                <p class="mb-0">Long-tailed Recognition in Human-Object Interaction Detection</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid portfolio-img" src="/img/research/hoi.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a class="portfolio-item" data-toggle="modal" href="#researchModal2">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h4>MIT CSAIL Medical Vision Group</h4>
+                                <p class="mb-0">Implicit Neural Representations for Medical Videos</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid portfolio-img" src="/img/research//hoi.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Research Modals -->
+    <div class="portfolio-modal modal fade" id="researchModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="modal-body">
+                                <h2>Long-tailed Recognition in Human-Object Interaction Detection</h2>
+                                <h4>Shanghai, China</h4>
+                                <h4>Sept. 2022 - Jan. 2023</h4>
+                                <h5>Undergraduate researcher, supervised by <a data-toggle="modal"
+                                        href="https://faculty.sist.shanghaitech.edu.cn/faculty/hexm/index.html">Prof. Xuming
+                                        He</a></h5>
+                                <br>
+                                <img class="img-fluid d-block mx-auto" src="/img/research/plus.png" alt="plus">
+                                <p class="lead">
+                                    As a high-level compositional reasoning in object detection, the goal of Human-Object
+                                    Interaction (HOI) detection is to make machine understand human activities in static
+                                    images, and the activities are abstracted as a set of &lt;human, object, action&gt; HOI
+                                    triplets.
+                                </p>
+                                <p class="lead">
+                                    During the research, I firstly learned about the Transformer-based object detection
+                                    method and its application in HOI detection task. Then, based on a state-of-the-art HOI
+                                    detection model <a href="/doc/HOI.pdf" target="blank">CDN</a>, together with HOI
+                                    datasets like V-COCO and HICO-DET, I investigated instances of long-tailed distribution,
+                                    especially the double long-tail of objects and actions in the datasets, and their
+                                    impacts on detection results. As a result, the ability of generalization of the model is
+                                    highly depressed in tail-categories detection.
+                                </p>
+                                <p class="lead">
+                                    To alleviate the problem, I applied many existing methods to the model, including the
+                                    decoupled training scheme, re-sampling, re-weighting, etc., and slightly improved the
+                                    performance on object detection and action classification separately. However, these
+                                    methods are not powerful enough to improve the accuracy to a large extent. Therefore, I
+                                    proposed a novel method, which imports the pose of human as a cue and parses the pose by
+                                    either Graph Neural Network (GNN) or linearly mapping the extracted skeleton to feature
+                                    space. Presumably, the processed pose information can provide some prior knowledge of
+                                    the action and the object that human is interacting with.
+                                </p>
+                                <p class="lead">
+                                    I will continue to finish the implementation and verification of this idea as I return
+                                    to ShanghaiTech University.
+                                </p>
+                                <br>
+                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                                    <i class="fa fa-times"></i> Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="researchModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="modal-body">
+                                <h2>Implicit Neural Representations for Medical Videos</h2>
+                                <h4>Cambridge, MA</h4>
+                                <h4>Mar. 2023 - Aug. 2023</h4>
+                                <h5>Undergraduate researcher, supervised by <a data-toggle="modal"
+                                        href="http://people.csail.mit.edu/polina/">Prof. Polina Golland</a> and Ph.D.
+                                    student <a data-toggle="modal" href="https://clintonjwang.github.io/">Clinton Wang</a>
+                                </h5>
+                                <br>
+                                <img class="img-fluid d-block mx-auto" src="/img/research/csail.png" alt="csail">
+                                <p class="lead">
+    
+                                </p>
+                                <p class="lead">
+    
+                                </p>
+                                <p class="lead">
+    
+                                </p>
+                                <p class="lead">
+    
+                                </p>
+                                <br>
+                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                                    <i class="fa fa-times"></i> Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Portfolio -->
     <section class="content-section bg-light" id="projects">
         <div class="container">
             <div class="content-section-heading text-center">
-                <h2 class="mb-2">Projects</h2>
+                <h2 class="mb-2">Course Projects</h2>
             </div>
             <div class="container text-center mb-5">
                 <p class="lead">Here are course projects finished independently or collaboratively.</p>
@@ -391,83 +529,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Research -->
-    <section class="content-section" id="research">
-        <div class="container" align="center">
-            <div class="content-section-heading text-center">
-                <h2 class="mb-2">Research Experience</h2>
-            </div>
-            <br>
-            <div class="row no-gutters" style="justify-content: center">
-                <div class="col-lg-4">
-                    <a class="portfolio-item" data-toggle="modal" href="#researchModal1">
-                        <span class="caption">
-                            <span class="caption-content">
-                                <h4>ShanghaiTech PLUS Lab</h4>
-                                <p class="mb-0">Long-tailed Recognition in Human-Object Interaction Detection</p>
-                            </span>
-                        </span>
-                        <img class="img-fluid portfolio-img" src="/img/research//hoi.png" alt="">
-                    </a>
-                </div>
-                <!-- <div class="col-lg-4">
-                    <a class="portfolio-item" data-toggle="modal" href="#researchModal1">
-                        <span class="caption">
-                            <span class="caption-content">
-                                <h4>MIT CSAIL Medical Vision Group</h4>
-                                <p class="mb-0">Implicit Neural Representations for Medical Videos</p>
-                            </span>
-                        </span>
-                        <img class="img-fluid portfolio-img" src="/img/research//hoi.png" alt="">
-                    </a>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Modals -->
-    <div class="portfolio-modal modal fade" id="researchModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="modal-body">
-                                <h2>Long-tailed Recognition in Human-Object Interaction Detection</h2>
-                                <h4>Shanghai, China</h4>
-                                <h4>Sept. 2022 - Jan. 2023</h4>
-                                <h5>Undergraduate researcher, supervised by <a data-toggle="modal" href="https://faculty.sist.shanghaitech.edu.cn/faculty/hexm/index.html">Prof. Xuming He</a></h5>
-                                <br>
-                                <img class="img-fluid d-block mx-auto" src="/img/research/plus.png"
-                                    alt="plus">
-                                <p class="lead">
-                                    As a high-level compositional reasoning in object detection, the goal of Human-Object Interaction (HOI) detection is to make machine understand human activities in static images, and the activities are abstracted as a set of &lt;human, object, action&gt; HOI triplets.
-                                </p>
-                                <p class="lead">
-                                    During the research, I firstly learned about the Transformer-based object detection method and its application in HOI detection task. Then, based on a state-of-the-art HOI detection model <a href="/doc/HOI.pdf" target="blank">CDN</a>, together with HOI datasets like V-COCO and HICO-DET, I investigated instances of long-tailed distribution, especially the double long-tail of objects and actions in the datasets, and their impacts on detection results. As a result, the ability of generalization of the model is highly depressed in tail-categories detection.
-                                </p>
-                                <p class="lead">
-                                    To alleviate the problem, I applied many existing methods to the model, including the decoupled training scheme, re-sampling, re-weighting, etc., and slightly improved the performance on object detection and action classification separately. However, these methods are not powerful enough to improve the accuracy to a large extent. Therefore, I proposed a novel method, which imports the pose of human as a cue and parses the pose by either Graph Neural Network (GNN) or linearly mapping the extracted skeleton to feature space. Presumably, the processed pose information can provide some prior knowledge of the action and the object that human is interacting with.
-                                </p>
-                                <p class="lead">
-                                    I will continue to finish the implementation and verification of this idea as I return to ShanghaiTech University.
-                                </p>
-                                <br>
-                                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
-                                    <i class="fa fa-times"></i> Close</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Skills -->
     <section class="content-section bg-primary text-white text-center" id="skills">
