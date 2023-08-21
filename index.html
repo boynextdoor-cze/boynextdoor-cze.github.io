@@ -135,13 +135,12 @@
                     My interests include Computer Vision and Machine Learning, especially their applications in medical image analysis. I want to design artificial intelligence models that can help doctors make more accurate analysis and diagnosis, because I believe the ultimate goal of technology is to promote human health and well-being.
                     </p>
                     <p class="lead" style="font-size: 14pt">For more information please see my <a class="link" href="/doc/Resume.pdf" target="blank">Curriculum Vitae</a>.</p>
-                    <p class="lead" style="*font-size: 15pt; margin-bottom:0px"><b>Honors and Awards:</b></p>
+                    <p class="lead" style="*font-size: 15pt; margin-bottom:0px"><b>News:</b></p>
                     <ul style="padding-left:30px">
-                        <li class="lead" style="font-size: 14pt">ShanghaiTech <b>Scholarship</b> (<b>Top 2%</b> of SIST students), Jan. 2022</li>
-                        <li class="lead" style="font-size: 14pt">ShanghaiTech <b>Scholarship</b> (<b>Top 3-7%</b> of SIST students), Dec. 2022</li>
-                        <li class="lead" style="font-size: 14pt">The <b>Outstanding Individual</b> of ShanghaiTech career trek program, Nov. 2022</li>
-                        <li class="lead" style="font-size: 14pt">The <b>Outstanding Individual</b> of ShanghaiTech social research in Chinese poor areas, Nov. 2021</li>
-                        <li class="lead" style="font-size: 14pt"><b>First Prize</b>, the 2018 National Olympiad in Informatics in Provinces, Shandong, Dec. 2018</li>
+                        <li style="font-size: 14pt"><b>[Mar. 2023]</b> I joined MIT CSAIL Medical Vision Group via MIT Undergraduate Research Opportunity Program (UROP).</li>
+                        <li style="font-size: 14pt"><b>[Dec. 2022]</b> I got ShanghaiTech scholarship, ranked top 3-7% in department.</li>
+                        <li style="font-size: 14pt"><b>[Oct. 2022]</b> I was admitted by MIT Special Student Program.</li>
+                        <li style="font-size: 14pt"><b>[Jan. 2022]</b> I got ShanghaiTech scholarship, ranked top 2% in department.</li>
                     </ul>
                 </div>
             </div>
@@ -169,11 +168,11 @@
                                 <div class="timeline-heading">
                                     <h4 style="color:darkorange">MIT Computer Science and Artificial Intelligence Laboratory (MIT CSAIL)</h4>
                                     <h5>Cambridge, MA & Remote</h5>
-                                    <h5>Mar. 2023 - Present</h5>
+                                    <h5>Mar. 2023 - Aug. 2023</h5>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">
-                                        When I was at MIT, I joined <a href="https://www.csail.mit.edu/research/medical-vision-group">MIT CSAIL Medical Vision Group</a> via undergraduate research program (<a href="https://urop.mit.edu/">UROP</a>), advised by <a href="https://people.csail.mit.edu/polina/">Prof. Polina Golland</a>.
+                                        When I was at MIT, I joined <a href="https://www.csail.mit.edu/research/medical-vision-group">MIT CSAIL Medical Vision Group</a> via <a href="https://urop.mit.edu/">Undergraduate Research Opportunity Program</a> (UROP), advised by <a href="https://people.csail.mit.edu/polina/">Prof. Polina Golland</a>.
                                     </p>
                                 </div>
                             </div>
@@ -346,7 +345,7 @@
                         <span class="caption">
                             <span class="caption-content">
                                 <h4>MIT CSAIL Medical Vision Group</h4>
-                                <p class="mb-0">Fetal MRI Atlas Construction via Implicit Neural Representation</p>
+                                <p class="mb-0">Dynamic Neural Fields for Learning Atlases of 4D Fetal MRI Time-series</p>
                             </span>
                         </span>
                         <img class="img-fluid portfolio-img" src="/img/research/inr-atlas.png" alt="">
@@ -440,7 +439,7 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="modal-body">
-                                <h2>Fetal MRI Atlas Construction via Implicit Neural Representation</h2>
+                                <h2>Dynamic Neural Fields for Learning Atlases of 4D Fetal MRI Time-series</h2>
                                 <h3>MIT CSAIL Medical Vision Group</h3>
                                 <h4>Cambridge, MA</h4>
                                 <h4>Mar. 2023 - Present</h4>
@@ -449,29 +448,24 @@
                                 </h5>
                                 <br>
                                 <img class="img-fluid d-block mx-auto" src="/img/research/csail.svg" alt="csail" width="30%">
+                                <img class="img-fluid d-block mx-auto" src="/img/research/inr-atlas pipeline.png" alt="pipeline">
                                 <p class="lead">
-                                    Neural fields like NeRFPlayer can accurately represent dynamic scenes with high temporal and spatial resolution. The
-                                    result is a 3D atlas, which is modified over time with both spatial (deformation) and intensity (appearance) components.
-                                    This technique can be broadly applied to various medical video modalities, including fetal BOLD MRI, arterial
-                                    ultrasound, fMRI, and cardiac ultrasound. The automatic disentanglement of spatial and intensity information can be used
-                                    for a variety of downstream tasks including anomaly detection and pathology classification and provides a clear
-                                    visualization of clinically relevant phenomena such as blood oxygenation changes over time. Moreover, this approach
-                                    innately performs denoising and super-resolution by aggregating information across low-resolution frames to yield a
-                                    continuous 3D atlas.
-                                </p>
-                                <p class="lead">
-                                    More research details will be added as the project progresses.
-                                </p>
-                                <p class="lead">
-    
+                                    We present a framework for fast biomedical image atlas construction using neural fields. Atlases are key to foundational
+                                    image analysis tasks, yet conventional and deep neural network methods for their estimation remain time-intensive. In
+                                    this preliminary work, we frame subject-specific atlas building as learning a neural field of deformable spatiotemporal
+                                    observations. We apply our method to learning subject-specific atlases and motion stabilization of dynamic BOLD MRI time
+                                    series of fetuses \textit{in utero}. Experimentally, our method yields high-quality atlases with competitive
+                                    registration performance and $\sim$5-7$\times$ faster convergence compared to existing work. However, well-tuned
+                                    baselines still achieve better anatomical overlap when optimized for longer durations, highlighting a need for future
+                                    work that improves the medical image registration performance of dynamic neural fields.
                                 </p>
                                 <p>Collaborators: <a href="https://github.com/Kidrauh" target="blank">Zhongxiao Cong</a>, <a
                                         href="https://clintonjwang.github.io/" target="blank">Clinton Wang</a>, <a href="https://www.neeldey.com/"
-                                        target="blank">Neel Dey</a>, <a href="http://yingchengliu.com/" target="blank">Yingcheng Liu</a> and <a href="https://people.csail.mit.edu/abulnaga/" target="blank">Mazdak Abulnaga</a></p>
+                                        target="blank">Neel Dey</a>, <a href="https://people.csail.mit.edu/abulnaga/" target="blank">Mazdak Abulnaga</a>, and <a href="http://yingchengliu.com/" target="blank">Yingcheng Liu</a></p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
-                                    <a href="https://github.com/boynextdoor-cze/CS181-Final-Project"
-                                        target="blank">https://github.com/boynextdoor-cze/CS181-Final-Project</a>
+                                    <a href="https://github.com/clintonjwang/sinf"
+                                        target="blank">https://github.com/clintonjwang/sinf</a>
                                 </div>
                                 <br>
                                 <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
