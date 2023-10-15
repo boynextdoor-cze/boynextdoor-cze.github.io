@@ -74,7 +74,7 @@
                 <br>
                 <em>Exchange Student @ Massachusetts Institute of Technology</em>
             </h3>
-            <a class="btn btn-xl btn-light js-scroll-trigger" href="#about">Enter Portfolio</a>
+            <a class="btn btn-xl btn-light js-scroll-trigger" href="#about">Enter Homepage</a>
         </div>
         <div class="overlay"></div>
     </header>
@@ -128,19 +128,21 @@
                 <div class="col-sm-12 col-lg-8" id="intro-section" style="margin-bottom: 1rem; margin-top:1rem">
                     <h4>Zeen (Harry) Chi 迟择恩</h4>
                     <p class="lead"><b>ShanghaiTech University 2024', B.Eng. Candidate</b></p>
-                    <p class="lead" style="font-size: 14pt">I'm currently a junior undergraduate student of ShanghaiTech University, School of Information Science and Technology (SIST), majoring
+                    <p class="lead" style="font-size: 14pt">I'm currently a senior undergraduate student of ShanghaiTech University, School of Information Science and Technology (SIST), majoring
                     in Computer Science. In Spring 2023, I was admitted as an exchange student by the MIT Special Student Program.
                     </p>
                     <p class="lead" style="font-size: 14pt">
-                    My interests include Computer Vision and Machine Learning, especially their applications in medical image analysis. I want to design artificial intelligence models that can help doctors make more accurate analysis and diagnosis, because I believe the ultimate goal of technology is to promote human health and well-being.
+                    I am interested in <b>Computer Vision</b> and <b>Applied Machine Learning in Biomedical Image Analysis</b>, especially the segmentation and registration of MRI, CT, and X-ray. I want to develop novel artificial intelligence models that help medical practitioners make more accurate analysis and diagnosis.
                     </p>
                     <p class="lead" style="font-size: 14pt">For more information please see my <a class="link" href="/doc/Resume.pdf" target="blank">Curriculum Vitae</a>.</p>
                     <p class="lead" style="*font-size: 15pt; margin-bottom:0px"><b>News:</b></p>
                     <ul style="padding-left:30px">
+                        <li style="font-size: 14pt"><b>[Sept. 2023]</b> One paper finished at MIT CSAIL has been submitted to MedNeurIPS 2023.</li>
+                        <li style="font-size: 14pt"><b>[June 2023]</b> I got ShanghaiTech International Exchange Program Scholarship, received ~12,000 USD.</li>
                         <li style="font-size: 14pt"><b>[Mar. 2023]</b> I joined MIT CSAIL Medical Vision Group via MIT Undergraduate Research Opportunity Program (UROP).</li>
-                        <li style="font-size: 14pt"><b>[Dec. 2022]</b> I got ShanghaiTech scholarship, ranked top 3-7% in department.</li>
+                        <li style="font-size: 14pt"><b>[Dec. 2022]</b> I was awarded as Merit Student of ShanghaiTech, ranked top 3-7% in school.</li>
                         <li style="font-size: 14pt"><b>[Oct. 2022]</b> I was admitted by MIT Special Student Program.</li>
-                        <li style="font-size: 14pt"><b>[Jan. 2022]</b> I got ShanghaiTech scholarship, ranked top 2% in department.</li>
+                        <li style="font-size: 14pt"><b>[Jan. 2022]</b> I was awarded as Merit Student of ShanghaiTech, ranked top 2% in school.</li>
                     </ul>
                 </div>
             </div>
@@ -167,12 +169,12 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4 style="color:darkorange">MIT Computer Science and Artificial Intelligence Laboratory (MIT CSAIL)</h4>
-                                    <h5>Cambridge, MA & Remote</h5>
+                                    <h5>Cambridge, MA</h5>
                                     <h5>Mar. 2023 - Aug. 2023</h5>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">
-                                        When I was at MIT, I joined <a href="https://www.csail.mit.edu/research/medical-vision-group">MIT CSAIL Medical Vision Group</a> via <a href="https://urop.mit.edu/">Undergraduate Research Opportunity Program</a> (UROP), advised by <a href="https://people.csail.mit.edu/polina/">Prof. Polina Golland</a>.
+                                        When I was at MIT, I joined <a href="https://www.csail.mit.edu/research/medical-vision-group">MIT CSAIL Medical Vision Group</a> via <a href="https://urop.mit.edu/">Undergraduate Research Opportunity Program</a> (UROP), advised by <a href="https://people.csail.mit.edu/polina/">Prof. Polina Golland</a> and <a href="https://neeldey.com">Dr. Neel Dey</a>.
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +444,7 @@
                                 <h2>Dynamic Neural Fields for Learning Atlases of 4D Fetal MRI Time-series</h2>
                                 <h3>MIT CSAIL Medical Vision Group</h3>
                                 <h4>Cambridge, MA</h4>
-                                <h4>Mar. 2023 - Present</h4>
+                                <h4>Mar. 2023 - Aug. 2023</h4>
                                 <h5>Undergraduate researcher, supervised by <a data-toggle="modal"
                                         href="http://people.csail.mit.edu/polina/">Prof. Polina Golland</a>
                                 </h5>
@@ -450,18 +452,22 @@
                                 <img class="img-fluid d-block mx-auto" src="/img/research/csail.svg" alt="csail" width="30%">
                                 <img class="img-fluid d-block mx-auto" src="/img/research/inr-atlas pipeline.png" alt="pipeline">
                                 <p class="lead">
-                                    We present a framework for fast biomedical image atlas construction using neural fields. Atlases are key to foundational
-                                    image analysis tasks, yet conventional and deep neural network methods for their estimation remain time-intensive. In
-                                    this preliminary work, we frame subject-specific atlas building as learning a neural field of deformable spatiotemporal
-                                    observations. We apply our method to learning subject-specific atlases and motion stabilization of dynamic BOLD MRI time
-                                    series of fetuses \textit{in utero}. Experimentally, our method yields high-quality atlases with competitive
-                                    registration performance and $\sim$5-7$\times$ faster convergence compared to existing work. However, well-tuned
-                                    baselines still achieve better anatomical overlap when optimized for longer durations, highlighting a need for future
-                                    work that improves the medical image registration performance of dynamic neural fields.
+                                    We present a method for fast biomedical image atlas construction using neural
+                                    fields. Atlases are key to biomedical image analysis tasks, yet conventional and
+                                    deep network estimation methods remain time-intensive. In this preliminary work,
+                                    we frame subject-specific atlas building as learning a neural field of deformable
+                                    spatiotemporal observations. We apply our method to learning subject-specific
+                                    atlases and motion stabilization of dynamic BOLD MRI time series of fetuses
+                                    in utero. Our method yields high-quality atlases of fetal BOLD time-series with
+                                    ~5-7x faster convergence compared to existing work. While our method slightly
+                                    underperforms well-tuned baselines in terms of anatomical overlap, it estimates
+                                    templates significantly faster, thus enabling rapid processing and stabilization
+                                    of large databases of 4D dynamic MRI acquisitions.
                                 </p>
                                 <p>Collaborators: <a href="https://github.com/Kidrauh" target="blank">Zhongxiao Cong</a>, <a
                                         href="https://clintonjwang.github.io/" target="blank">Clinton Wang</a>, <a href="https://www.neeldey.com/"
                                         target="blank">Neel Dey</a>, <a href="https://people.csail.mit.edu/abulnaga/" target="blank">Mazdak Abulnaga</a>, and <a href="http://yingchengliu.com/" target="blank">Yingcheng Liu</a></p>
+                                <p>I appreciate <a href="https://www.childrenshospital.org/directory/patricia-ellen-grant">Dr. P. Ellen Grant</a> and <a href="https://www.childrenshospital.org/research/researchers/esra-abaci-turk">Dr. Esra Abaci Turk</a> and all participants for providing the fetal MRI dataset.</p>
                                 <div class="lead mb-4">
                                     <b>View this project on GitHub: </b>
                                     <a href="https://github.com/clintonjwang/sinf"
